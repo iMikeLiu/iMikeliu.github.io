@@ -1,0 +1,40 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//CN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<script src="../script/jquery.js"></script> 
+<head>
+<script>
+</script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script type="text/javascript" src="../script/showdown.js"></script>
+<script type="text/javascript" src="../script/topic.js"></script>
+<script type="text/javascript" src="../script/getTime.js">
+</script>
+
+<style type="text/css" src="css/index.css">
+.Main p {
+	text-align: center;
+}
+#date1 {
+	text-align: center;
+}
+.topic {
+	text-align: center;
+}
+</style>
+</head>
+<body onload="topic();getTime()">
+<div id="topic"></div>
+<h1>
+  <div id="date1"></div>
+</h1>
+<div id="result"></div>
+<script type="text/javascript" src="../script/editor.js">
+</script>
+<a>页面名：</a>
+<textarea style="width:600px" id="Page"></textarea>
+<button onClick='chk("Page")'>载入内容</button>
+<p>内容：</p>
+<textarea style="width:800px;height:1000px" id="Text"></textarea>
+
+</body>
+</html>

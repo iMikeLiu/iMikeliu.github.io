@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//CN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+<script>
+</script>
+<script src="../script/mobile.js"></script>
+<script src="../script/jquery.js"></script>
+<script type="text/javascript" scr="script/index.js"></script>
+<script type="text/javascript" src="script/marked.min.js"></script>
+<script type="text/javascript" src="script/topic.js"></script>
+<link href="//cdn.luogu.org/css/amazeui.min.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="script/getTime.js"></script>
+<script type="text/javascript" src="script/libv86.js"></script>
+
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+
+</head>
+
+<body onload="topic();getTime();">
+<div id="topic">
+</div>
+<h1>
+  <div id="date1"></div>
+</h1>
+<div class="Main">
+  <p>提示：本页面制作水平逼近20世纪90年代初。</p>
+</div>
+
+<div id="result"></div>
+
+<div id="main"></div>
+
+<script>
+  var flag=false
+var query=GetQueryString("page")
+if(query==null)query="index.md"
+$.get("../markdown/"+query,function(data){
+  switch(query.split(".")[1])
+{
+case "cpp":
+  data="```cpp\n"+data+"\n```";
+  break;
+case "h":
+  data="```cpp\n"+data+"\n```";
+  break;
+case "bat":
+  data="```bat\n"+data+"\n```";
+  break;
+case "pas":
+  data="```pascal\n"+data+"\n```";
+  break;
+default:break;
+}
+var rendererMD = new marked.Renderer();
+marked.setOptions({
+      renderer: rendererMD,
+      gfm: true,
+      tables: true,
+      breaks: false,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false
+    });
+  marked.setOptions({
+        highlight: function (code) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+  var html=marked(data)
+   document.getElementById("result").innerHTML=html;}
+);
+$.get("../markdown/索引.md",function(data){
+var rendererMD = new marked.Renderer();
+marked.setOptions({
+      renderer: rendererMD,
+      gfm: true,
+      tables: true,
+      breaks: false,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false
+    });
+  marked.setOptions({
+        highlight: function (code) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+  var html=marked(data)
+   document.getElementById("menu").innerHTML=html;}
+);
+</script>
+<script src="script/mainShow.js"></script>
+</body>
+</html>

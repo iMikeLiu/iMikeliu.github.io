@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    background-color: Pink;
+    color: #fff;
+    line-height: 1.5;
+}
+#Main {
+	text-align: center;
+    color: Green;
+}
+.Main p {
+	text-align: center;
+}
+#result
+{
+    margin-left: 10px;
+    margin-right: 10px;
+    background: #DFF;
+    color: #000;
+    border-radius: 5px;
+}
+#describe
+{
+    background: #DFF;
+    color: #000;
+    border-radius: 5px;
+}
+#input
+{
+    background: #DFF;
+    color: #000;
+    border-radius: 5px;
+}
+#output
+{
+    background: #DFF;
+    color: #000;
+    border-radius: 5px;
+}
+hr
+{
+    height:3px;
+    border:none;
+    border-top:3px double #DFF;
+}
+#date1
+{
+    background: #DFF;
+    color: #000;
+    border-radius: 5px;
+    height: auto;
+    width: 680px;
+    text-align: center;
+    margin:auto;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//CN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../script/jquery.js"></script> 
+<script type="text/javascript" src="../script/showdown.js"></script>
+<script type="text/javascript" src="../script/topic.js"></script>
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../script/getTime.js">
+</script>
+<script>
+function GetQueryString(name) {  
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg); 
+	 
+	if (r != null) 
+		return decodeURIComponent(r[2]); 
+	else
+		return null;
+  }  
+</script>
+
+</head>
+
+<body onload="topic();getTime()">
+<div id="topic">
+</div>
+<h1>
+  <div id="date1"></div>
+</h1>
+<div class="Main">
+  <p>提示：本页面制作水平逼近20世纪90年代初。</p>
+</div>
+<div id="dex">
+<a>
+  输入题号:
+</a>
+<textarea id="ha"></textarea>
+<button onclick="location.href='/markdown/在线题库.html?id='+$('#ha').val()">进入</button>
+</div>
+
+<div id="background"></div>
+<div id="hr"><hr></div>
+<div id="describe"></div>
+<div id="hr"><hr></div>
+<div id="input"></div>
+<div id="hr"><hr></div>
+<div id="output"></div>
+<div id="main"></div>
+<!--
+-<script type="text/javascript" src="/script/Markdown.js">
+</script>
+<script type="text/javascript" src="/script/mainShow.js">
+</script>
+-->
+<script type="text/javascript" src="../script/xml.js"></script>
+<script>
+var getParam;
+getParam=GetQueryString("id");
+if(getParam!=null)
+{toMarkdown(getParam+".json","background","background");toMarkdown(getParam+".json","describe","describe");toMarkdown(getParam+".json","input","input");toMarkdown(getParam+".json","output","output");toMarkdown(getParam+".json","instruction","instruction")}
+else
+{
+  document.getElementById("background").innerHTML="无此题或未输入题号"
+}
+</script>
+</body>
+</html>
