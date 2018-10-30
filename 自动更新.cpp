@@ -75,7 +75,7 @@ void dir(string path) {
 int main() {
 	string path=GetProgramDir()+"\\markdown\\索引.md";
 	freopen(path.data(),"w",stdout); 
-	cout<<"# [index](\\index.html)\n# pages\n# ["<<GBKToUTF8("在线题库")<<"](\\markdown\\"<<GBKToUTF8("在线题库")<<".html)\n";
+	cout<<"# [index](/index.html)\n# pages\n# ["<<GBKToUTF8("在线题库")<<"](//markdown//"<<GBKToUTF8("在线题库")<<".html)\n";
 	path=GetProgramDir()+"\\markdown";
 	dir(path);
 	return 0;
