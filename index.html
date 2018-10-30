@@ -5,12 +5,13 @@
 <script>
 </script>
 <link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.1.0/dist/frappe-charts.min.iife.js"></script>
 <script src="../script/mobile.js"></script>
 <script src="../script/jquery.js"></script>
 <script type="text/javascript" scr="script/index.js"></script>
 <script type="text/javascript" src="script/marked.min.js"></script>
 <script type="text/javascript" src="script/topic.js"></script>
-<link href="//cdn.luogu.org/css/amazeui.min.css" rel="stylesheet" type="text/css">
+<link href="css/amazeUI.css" rel="stylesheet" type="text/css">
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="script/getTime.js"></script>
 <script type="text/javascript" src="script/libv86.js"></script>
@@ -18,7 +19,24 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad()</script>
-
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+});
+</script>
+<script>
+marked.setOptions({
+      renderer: rendererMD,
+      gfm: true,
+      tables: true,
+      breaks: true,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false,
+    });
+</script>
 </head>
 
 <body onload="topic();getTime();">
@@ -74,26 +92,6 @@ marked.setOptions({
     });
   var html=marked(data)
    document.getElementById("result").innerHTML=html;}
-);
-$.get("../markdown/索引.md",function(data){
-var rendererMD = new marked.Renderer();
-marked.setOptions({
-      renderer: rendererMD,
-      gfm: true,
-      tables: true,
-      breaks: false,
-      pedantic: false,
-      sanitize: false,
-      smartLists: true,
-      smartypants: false
-    });
-  marked.setOptions({
-        highlight: function (code) {
-        return hljs.highlightAuto(code).value;
-      }
-    });
-  var html=marked(data)
-   document.getElementById("menu").innerHTML=html;}
 );
 </script>
 <script src="script/mainShow.js"></script>
