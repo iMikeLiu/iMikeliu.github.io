@@ -1,15 +1,16 @@
-﻿![](https://cdn.luogu.org/upload/pic/36064.png)
+﻿![pic/library/36064.png](pic/library/36064.png)
+
 > Life is like an ocean , and only the strong-welled people can reach the other side.
 
 [欢迎来到我的luogu个人主页](https://www.luogu.org/space/show?uid=22927)
 
-![https://www.luogu.org/record/show?rid=11115667](https://cdn.luogu.org/upload/pic/34227.png)
+![pic/library/34227.png](pic/library/34227.png)
 
-![https://www.luogu.org/record/show?rid=11116079](https://cdn.luogu.org/upload/pic/34229.png)
+![pic/library/34229.png](pic/library/34229.png)
 
-![https://www.luogu.org/record/show?rid=11116261](https://cdn.luogu.org/upload/pic/34232.png)
+![pic/library/34232.png](pic/library/34232.png)
 
-![](https://cdn.luogu.org/upload/pic/34234.png)
+![pic/library/34234.png](pic/library/34234.png)
 
 
 ------------
