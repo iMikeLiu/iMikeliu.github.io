@@ -2,10 +2,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <html>
 <head>
-<script>
-</script>
 <link rel="icon" type="image/x-icon" href="favicon.ico"/>
-<script src="https://cdn.jsdelivr.net/npm/frappe-charts@1.1.0/dist/frappe-charts.min.iife.js"></script>
 <script src="../script/mobile.js"></script>
 <script src="../script/jquery.js"></script>
 <script type="text/javascript" scr="script/index.js"></script>
@@ -15,7 +12,6 @@
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="script/getTime.js"></script>
 <script type="text/javascript" src="script/libv86.js"></script>
-
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad()</script>
@@ -26,6 +22,7 @@ tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
 });
 </script>
 <script>
+var rendererMD = new marked.Renderer();
 marked.setOptions({
       renderer: rendererMD,
       gfm: true,
@@ -38,6 +35,8 @@ marked.setOptions({
     });
 </script>
 </head>
+
+
 
 <body onload="topic();getTime();">
 <div id="topic">
@@ -95,5 +94,7 @@ marked.setOptions({
 );
 </script>
 <script src="script/mainShow.js"></script>
+
+<script>"<center>最后更新时间: " + document.lastModified + "</center>"</script>
 </body>
 </html>
