@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//CN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script src="../script/jquery.js"></script> 
+<script type="text/javascript" src="../script/topic.js"></script>
+<link href="../css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="../script/getTime.js"></script>
+<script src="../script/JSCPP.es5.min.js"></script>
+<script src="../script/codemirror.js"></script>
+<link rel="stylesheet" href="../script/codemirror.css">
+<script src="../script/clike.js"></script>
+<script src="../script/marked.min.js"></script>
+
+<script>
+function GetQueryString(name) {  
+	var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+	var r = window.location.search.substr(1).match(reg); 
+	 
+	if (r != null) 
+		return decodeURIComponent(r[2]); 
+	else
+		return null;
+  }  
+</script>
+
+</head>
+
+<body onload="topic();getTime()">
+<div id="topic">
+</div>
+<h1>
+  <div id="date1"></div>
+</h1>
+<div class="Main">
+  <p>敬告：仅允许使用少数几个头文件！见：<a href="index.html?page=题库头文件限制.md">题库头文件限制</a></p>
+</div>
+<div id="dex">
+<a>
+  输入题号:
+</a>
+<textarea id="ha"></textarea>
+<button onclick="location.href='/markdown/复赛题库.html?id='+$('#ha').val()">进入</button>
+</div>
+
+<div id="background"></div>
+<div id="hr"><hr></div>
+<div id="describe"></div>
+<div id="hr"><hr></div>
+<div id="input"></div>
+<div id="hr"><hr></div>
+<div id="output"></div>
+<div id="hr"><hr></div>
+<div class="form-control" id="code"></div>
+<!--<textarea name="code_textarea" id="code_textarea" cols="30" rows="10"></textarea>-->
+<script>
+var editor = CodeMirror(document.getElementById("code"), {lineNumbers: true,mode:"clike"});
+//var editor2 = CodeMirror.fromTextArea(document.getElementById("code_textarea"), {lineNumbers: true});
+
+
+</script>
+<script>
+function submit()
+{
+	var inlinecode=editor.getValue();
+	for(var i=1;i<=10;i++)
+	{
+		var stdin;
+		var stdout;
+		var output;
+		$.get("../pic/"+GetQueryString("id")+"/"+GetQueryString("id")+String(i)+".in",function(data){stdin=data;});
+		$.get("../pic/"+GetQueryString("id")+"/"+GetQueryString("id")+String(i)+".out",function(data){stdout=data;});
+		var config = {
+			stdio: {
+				write: function(s) {
+					output += s;
+				}
+			}
+		};
+		JSCPP.run(inlinecode, stdin, config);
+		if(stdout==output)
+			alert("第"+string(i)+"个测试点正确。");
+	}
+}
+</script>
+<button id="submit" onclick="submit()"> submit </button>
+</div>
+<script type="text/javascript" src="../script/xml.js"></script>
+<script>
+var getParam;
+getParam=GetQueryString("id");
+if(getParam!=null)
+{
+toMarkdown(getParam+".json","background","background");
+toMarkdown(getParam+".json","describe","describe");
+toMarkdown(getParam+".json","input","input");
+toMarkdown(getParam+".json","output","output");
+}
+else
+{
+  document.getElementById("background").innerHTML="无此题或未输入题号"
+}
+</script>
+</body>
+</html>

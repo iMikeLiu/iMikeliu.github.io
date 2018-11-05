@@ -45,8 +45,8 @@ body {
 hr
 {
     height:3px;
-    border:none;
-    border-top:3px double #DFF;
+    border:blue;
+    border-top:3px double blue;
 }
 #date1
 {

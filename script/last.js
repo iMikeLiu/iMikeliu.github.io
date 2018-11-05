@@ -1,0 +1,1 @@
+"<center>最后更新时间: " + document.lastModified + "</center>"
