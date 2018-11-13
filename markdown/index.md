@@ -125,9 +125,11 @@ Common Lisp
 ```
 ---
 
-Create Information：
+Pre-Create Information：
 
-<center>我的格言</center>
+---
+
+ **<center>我的格言</center>**
 
 # Talk is cheap,show me your code.
 
@@ -135,7 +137,9 @@ Create Information：
 
 - 数论图论博弈论，论论扎心
 
-<center>系统模块</center>
+---
+
+ **<center>系统模块</center>**
 
 # [说明](index.html?page=说明.md)
 
