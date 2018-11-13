@@ -1,7 +1,16 @@
 ﻿# index
 
+---
+
+2018/11/13 Update：
+
+信竞已凉，明年再见。
+
+PS：强烈谴责€€£出原题的行为。
 
 ---
+
+2018/11/08 Update：
 
 作为一个即将退役的OIer，我想在这里挂一篇文章。
 
@@ -46,6 +55,8 @@
 
 
 ---
+
+2018/10/31 Update：搬运原luogu博客
 
 ![pic/library/36064.png](pic/library/36064.png)
 
@@ -114,18 +125,17 @@ Common Lisp
 ```
 ---
 
+Create Information：
+
+<center>我的格言</center>
+
 # Talk is cheap,show me your code.
-
-当前[本蒟蒻的博客](imikeliu.github.io)的访问量是![](http://cc.amazingcounters.com/counter.php?i=3227244&c=9682045)人次
-
-当前[ZSC大佬的博客](https://www.luogu.org/space/show?uid=25030)的访问量是![](http://cc.amazingcounters.com/counter.php?i=3225719&c=9677470)人次
-
-![](https://s1.ax1x.com/2018/08/24/PHKSu8.jpg)
 
 - 枚举碾标算，N方过百万；暴力出奇迹，骗分最给力。
 
 - 数论图论博弈论，论论扎心
 
+<center>系统模块</center>
 
 # [说明](index.html?page=说明.md)
 
