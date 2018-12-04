@@ -1,5 +1,35 @@
 ﻿# index
- 
+
+ <center> <font size="7" color="cyan"> 最新通知 </font> </center>
+
+
+ <center> <font size="7" color="pink"> 山东省青岛第一中学 程序设计社团 纳新了！！！ </font> </center>
+
+
+|社团大佬|教学内容|
+|------|-------|
+|18.2 CY|C++基本语法|
+|17.3 [LLH](https:\\llh721113.github.io)|基础算法|
+|17.3 ZDX|C++与VB的区别和关系|
+
+社团唯一的蒟蒻 [LHY](https:\\imikeliu.github.io)
+
+<center> <font size="6" color="red">欢迎加入我们的社团！</font> </center>
+
+<center> <font size="6" color="blue">报名方式：18.4LHY 18.2CY </font> </center>
+
+---
+
+2018/12/04 Update：
+
+<center>生活和学习都越来越好了呢！</center>
+
+已经搬到①宿舍了，挺舒服的。
+
+<font color="pink">正在努力~</font>
+
+---
+
  2018/11/27 Update：
  
  目前来看我的文化课和OI都凉了
