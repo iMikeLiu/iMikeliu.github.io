@@ -1,4 +1,6 @@
-﻿# index
+# index
+
+ <font size="10px" color="purple"> <center> [社团纳新专题板块](index.html?page=纳新.md) </center> </font>
 
  <center> <font size="7" color="cyan"> 最新通知 </font> </center>
 
@@ -9,10 +11,10 @@
 |社团大佬|教学内容|
 |------|-------|
 |18.2 CY|C++基本语法|
-|17.3 [LLH](https:\\llh721113.github.io)|基础算法|
+|17.3 [LLH](https://llh721113.github.io)|基础算法|
 |17.3 ZDX|C++与VB的区别和关系|
 
-社团唯一的蒟蒻 [LHY](https:\\imikeliu.github.io)
+社团唯一的蒟蒻 [LHY](https://imikeliu.github.io)
 
 <center> <font size="6" color="red">欢迎加入我们的社团！</font> </center>
 
