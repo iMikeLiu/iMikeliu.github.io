@@ -50,15 +50,8 @@ hr
 }
 #date1
 {
-    background: #DFF;
-    color: #000;
-    border-radius: 5px;
-    height: auto;
-    width: 100px;
-    text-align: center;
-    margin:auto;
+    background: #DFF
 }
-
         table
         {
             border-collapse: collapse;
