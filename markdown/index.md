@@ -24,7 +24,7 @@
 
 2018/12/15 Update：
 
-<center>生活就像海洋，只有意志坚强的人才能到达彼岸<center>
+<center>生活就像海洋，只有意志坚强的人才能到达彼岸</center>
 
 <center>本周因信息课练习Micro$oft Excel暂停一次例行更新</center>
 
