@@ -182,11 +182,3 @@ Pre-Create Information：
 - 枚举碾标算，N方过百万；暴力出奇迹，骗分最给力。
 
 - 数论图论博弈论，论论扎心
-
----
-
- **<center>系统模块</center>**
-
-# [说明](index.html?page=说明.md)
-
-# [索引](index.html?page=索引.md)
