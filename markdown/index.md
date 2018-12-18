@@ -1,5 +1,9 @@
 # index
 
+<center> <font size="100px" color="red">cyka blyat</font> </center>
+
+---
+
  <font size="10px" color="purple"> <center> [社团纳新专题板块](index.html?page=纳新.md) </center> </font>
 
  <center> <font size="7" color="cyan"> 最新通知 </font> </center>
