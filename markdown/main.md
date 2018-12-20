@@ -17,3 +17,14 @@
 # [说明](index.html?page=说明.md)  
 
 # [索引](index.html?page=索引.md)  
+
+
+---
+
+本网站仅用于技术展示与实践。
+
+This website is only used to improve and show my technology.
+
+由Github Pages展示。
+
+Showed by Github Pages.
