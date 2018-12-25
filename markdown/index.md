@@ -34,6 +34,18 @@
 
 ---
 
+2018/12/25 Update：
+
+<center> <font color="red">Merry Christmas!</font> </center>
+
+昨晚上度过了一个补作业的平安夜，补到 $ 2018/12/25 00:00 $ 。
+
+~~ 然而还是没有把结尾写完 ~~
+
+<font color="red"> 理性作业 快乐自习 </font>
+
+---
+
 2018/12/04 Update：
 
 <center>生活和学习都越来越好了呢！</center>
