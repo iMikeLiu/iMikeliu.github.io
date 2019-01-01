@@ -24,6 +24,13 @@
 
 <center> <font size="6" color="blue">报名方式：18.4LHY 18.2CY </font> </center>
 
+---
+
+2019/1/1 Update:
+
+各位在<font size="7">过新年</font>，我们在<font size="6" color="red">上自习</font>。
+
+贼难受。
 
 ---
 
