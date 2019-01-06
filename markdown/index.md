@@ -24,6 +24,14 @@
 
 <center> <font size="6" color="blue">报名方式：18.4LHY 18.2CY </font> </center>
 
+2019/1/6 Update：
+
+没啥事了，要考试了
+
+假期见。
+
+各位考试顺利
+
 ---
 
 2019/1/1 Update:
