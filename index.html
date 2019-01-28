@@ -41,7 +41,11 @@ marked.setOptions({
 
 
 <body>
-      <marquee behavior="scroll" scrollamount="5" color="yellow"> <font color="#DFF"> 欢迎来到imikeliu.github.io！ </font></marquee>
+      <marquee behavior="scroll" scrollamount="5" color="yellow"> <font color="#DFF" size="50px" id="mqe"> 欢迎来到imikeliu.github.io！ </font></marquee>
+<script>
+      document.getElementById("mqe").setAttribute(scrollamount,toString(Math.floor(Math.random()*10)))
+      
+      </script>
 <h1>
   <div id="date1"></div>
 </h1>
