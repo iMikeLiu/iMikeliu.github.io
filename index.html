@@ -100,6 +100,7 @@ marked.setOptions({
   var html=marked(data)
    document.getElementById("result").innerHTML=html;}
 );
+      $.get("./markdown/ad.md",fuction(data){document.getElementById("ad").innerHTML=marked(data)})
 </script>
 <script src="script/mainShow.js"></script>
 
