@@ -103,7 +103,7 @@ marked.setOptions({
       $.get("./markdown/ad.md",fuction(data){document.getElementById("ad").innerHTML=marked(data)})
 </script>
 <script src="script/mainShow.js"></script>
-
+<h2 onclick="showEruda">转发提供：蒟蒻云</h2> <script> var count = 0; function showEruda () { if (count >= 10) { var erdua = sessionStorage.getItem('erdua'); if (!erdua || erdua === 'false'){ sessionStorage.setItem('eruda', 'true') } else { sessionStorage.setItem('eruda', 'false') } location.reload() } count++ } </script>
 <script>"<center>最后更新时间: " + document.lastModified + "</center>"</script>
 </body>
 </html>
