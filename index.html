@@ -41,7 +41,7 @@ marked.setOptions({
 
 
 <body>
-      <marquee behavior="scroll" scrollamount="5" color="yellow" id="mqe"> <font color="#DFF" size="50px"> 欢迎访问托管在蒟蒻云的imikeliu.juruoyun.top！ </font></marquee>
+      <marquee behavior="scroll" scrollamount="5" color="yellow" id="mqe"> <font color="#DFF" size="50px"> 欢迎访问被蒟蒻云转发的imikeliu.juruoyun.top！ </font></marquee>
 <script>
       var rnd=Math.floor(Math.random()*10)
       console.log(rnd)
@@ -51,11 +51,9 @@ marked.setOptions({
 <h1>
   <div id="date1"></div>
 </h1>
-      <div id="ad">
-            <center><font size="7" color="yellow"><a href="http://www.juruoyun.top">欢迎访问蒟蒻云！</a></font></center>
-            <center><a href="http://www.juruoyun.top" style="size:10px;color:yellow">蒟蒻云</a></center>
-            
-      </div>
+      <div id="ad"></div>
+      
+      
 <div id="result"></div>
 
 <div id="main"></div>
@@ -100,6 +98,7 @@ marked.setOptions({
   var html=marked(data)
    document.getElementById("result").innerHTML=html;}
 );
+      $.get("./markdown/ad.md",function(data){document.getElementById("ad").innerHTML=data}
 </script>
 <script src="script/mainShow.js"></script>
 <h2 onclick="showEruda">转发提供：蒟蒻云</h2> <script> function showEruda () { var erdua = sessionStorage.getItem('erdua'); if (!erdua || erdua === 'false'){ sessionStorage.setItem('eruda', 'true') } else { sessionStorage.setItem('eruda', 'false') } location.reload() }  </script>
