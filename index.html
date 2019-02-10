@@ -52,7 +52,9 @@ marked.setOptions({
   <div id="date1"></div>
 </h1>
       <div id="ad"></div>
-      
+      <script>
+                  $.get("./markdown/ad.md",function(data){ad.innerHTML=data}
+                        </script>
       
 <div id="result"></div>
 
@@ -98,7 +100,6 @@ marked.setOptions({
   var html=marked(data)
    document.getElementById("result").innerHTML=html;}
 );
-      $.get("./markdown/ad.md",function(data){ad.innerHTML=data}
 </script>
 <script src="script/mainShow.js"></script>
 <h2 onclick="showEruda">转发提供：蒟蒻云</h2> <script> function showEruda () { var erdua = sessionStorage.getItem('erdua'); if (!erdua || erdua === 'false'){ sessionStorage.setItem('eruda', 'true') } else { sessionStorage.setItem('eruda', 'false') } location.reload() }  </script>
