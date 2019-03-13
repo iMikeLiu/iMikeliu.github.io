@@ -1,0 +1,86 @@
+<!DOCUMENTYPE
+<html><head>
+  <link rel="stylesheet" href="blackorwhite.css">
+
+  <script src="//brain.js.org/jquery-1.4.2.min.js"></script>
+  <script src="//brain.js.org/browser.js"></script>
+  <script src="//brain.js.org/blackorwhite.js"></script>
+
+  <title>brain.js demo</title>
+</head>
+
+<body>
+
+  <div id="container">
+    <div class="section" id="training-box">
+      <div class="section-header">
+        您感觉哪一个更加清晰呢？
+      </div>
+        <div id="swatches">
+		    <div class="swatch-box">
+            <div id="black-swatch" class="swatch" onclick="trainer.pickSwatch('black');" style="background-color: rgb(47, 185, 147);">
+              <div class="swatch-text">这一个？</div>
+            </div></div>
+	    <div class="swatch-box">
+            <div id="white-swatch" class="swatch" onclick="trainer.pickSwatch('white');" style="background-color: rgb(47, 185, 147);">
+              <div class="swatch-text">这一个？</div>
+            </div></div>
+        </div>
+        <div id="training-buttons">
+          <span class="pass-button button" onclick="trainer.changeColor();" title="skip">→</span>
+        </div>
+      <div id="test-box" style="display: none;">
+        <div id="test-button" onclick="trainer.trainNetwork();" class="button">训练神经网络！</div>
+        <div id="subtitle"> 你可以在任何时候训练神经网络，但是你给它的颜色样本是越多越好。
+        </div>
+      </div>
+    </div>
+
+    <div id="progress-box" style="display: none;">
+      <div id="training-message">
+        training network...
+      </div>
+      <div id="progress-bar">
+	    <div id="progress-completed">
+	    </div>
+      </div>
+   </div>
+
+    <div class="section" id="testing-box" style="display: none;">
+      <div id="swatches">
+	      <div id="nn-swatch-box" class="swatch-box">
+            <div id="nn-swatch" class="swatch" onclick="tester.viewCode('nn');" title="浏览神经网络代码" style="background-color: rgb(47, 185, 147);">
+              <div class="swatch-text">你的神经网络</div>
+            </div>
+            <div class="view-code" onclick="tester.viewCode('nn');">code
+	            <div class="view-code-arrow">▶</div>
+  	        </div>
+	      </div>
+	      <div id="wcag-swatch-box" class="swatch-box" style="display: none;">
+          <div id="wcag-swatch" class="swatch" onclick="tester.viewCode('wcag');" title="浏览亮度算法" style="background-color: rgb(47, 185, 147);">
+          <div class="swatch-text">亮度算法</div>
+          </div>
+          <div class="view-code" onclick="tester.viewCode('wcag')">code
+	          <div class="view-code-arrow">▶</div>
+	        </div>
+	      </div>
+        <div id="yiq-swatch-box" class="swatch-box">
+          <div id="yiq-swatch" class="swatch" onclick="tester.viewCode('yiq');" title="浏览YIQ代码" style="background-color: rgb(47, 185, 147);">
+               <div class="swatch-text">YIQ公式</div>
+          </div>
+          <div class="view-code" onclick="tester.viewCode('yiq')">code
+	          <div class="view-code-arrow">▶</div>
+	        </div>
+        </div>
+      </div>
+      <div id="training-buttons">
+        <span class="pass-button button" onclick="tester.testRandom();" title="next color">→</span>
+      </div>
+    </div>
+    <div id="code-box" style="display: none;">
+      <pre id="code"></pre>
+    </div>
+  </div>
+
+
+</body></html>
