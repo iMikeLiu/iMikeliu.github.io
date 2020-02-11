@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//CN" "http://www.w3.org/TR/html4/loose.dtd">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
+<head>
+<link rel="icon" type="image/x-icon" href="favicon.ico"/>
+<script src="script/codemirror.js"></script>
+<link rel="stylesheet" href="script/codemirror.css">
+<script src="script/clike.js"></script>
+<script src="script/mobile.js"></script>
+<script src="script/jquery.js"></script>
+<script type="text/javascript" scr="script/index.js"></script>
+<script type="text/javascript" src="script/marked.min.js"></script>
+<script type="text/javascript" src="script/topic.js"></script>
+<link href="css/amazeUI.css" rel="stylesheet" type="text/css">
+<link href="css/index.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="script/libv86.js"></script>
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad()</script>
+<script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+tex2jax: {inlineMath: [['$','$'], ['\(','\)']]}
+});
+</script>
+<script>
+var rendererMD = new marked.Renderer();
+marked.setOptions({
+      renderer: rendererMD,
+      gfm: true,
+      tables: true,
+      breaks: true,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false,
+    });
+</script>
+</head>
+
+
+
+<body>
+      <marquee behavior="scroll" scrollamount="5" color="yellow" id="mqe"> <font color="#DFF" size="50px"> 欢迎访问被蒟蒻云转发的imikeliu.juruoyun.top！ </font></marquee>
+<script>
+      var rnd=Math.floor(Math.random()*10)
+      console.log(rnd)
+      document.getElementById("mqe").setAttribute("scrollamount",(rnd))
+      
+      </script>
+<h1>
+  <div id="date1"></div>
+</h1>
+      <div id="ad"></div>
+      <script>
+                  $.get("http://oss1.juruoyun.top/tpad/mikeliu.html",function(data){ad.innerHTML=data})
+                        </script>
+<textarea id="markdown"></textarea>
+<button onclick="oc()">解析</button>
+<div id="result"></div>
+
+<div id="main"></div>
+
+<script>
+function oc()
+{
+data=document.getElementById("markdown").value;
+var rendererMD = new marked.Renderer();
+marked.setOptions({
+      renderer: rendererMD,
+      gfm: true,
+      tables: true,
+      breaks: false,
+      pedantic: false,
+      sanitize: false,
+      smartLists: true,
+      smartypants: false
+    });
+  marked.setOptions({
+        highlight: function (code) {
+        return hljs.highlightAuto(code).value;
+      }
+    });
+  var html=marked(data)
+   document.getElementById("result").innerHTML=html;}
+);
+}
+</script>
+<script src="script/mainShow.js"></script>
+<h2 onclick="showEruda">转发提供：蒟蒻云</h2> <script> function showEruda () { var erdua = sessionStorage.getItem('erdua'); if (!erdua || erdua === 'false'){ sessionStorage.setItem('eruda', 'true') } else { sessionStorage.setItem('eruda', 'false') } location.reload() }  </script>
+<script>"<center>最后更新时间: " + document.lastModified + "</center>"</script>
+</body>
+</html>
