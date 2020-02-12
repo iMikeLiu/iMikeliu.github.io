@@ -78,12 +78,10 @@ marked.setOptions({
     });
   marked.setOptions({
         highlight: function (code) {
-        return hljs.highlightAuto(code).value;
-      }
+        return hljs.highlightAuto(code).value;}
     });
-  var html=marked(data)
-   document.getElementById("result").innerHTML=html;}
-);
+  var html=marked(data);
+   document.getElementById("result").innerHTML=html;
 }
 </script>
 <script src="script/mainShow.js"></script>
