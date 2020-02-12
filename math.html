@@ -53,11 +53,7 @@ marked.setOptions({
 </h1>
       <div id="ad"></div>
       <script>
-                  setTimeout(() => {
-    window.MathJax && window.MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.getElementById('result')],function(){
-        //to do something   公式重新渲染完成后执行这个回调函数
-    });
-},0)
+
                   $.get("http://oss1.juruoyun.top/tpad/mikeliu.html",function(data){ad.innerHTML=data})
                         </script>
 <textarea id="markdown" style="color:black"></textarea>
@@ -87,6 +83,11 @@ marked.setOptions({
     });
   var html=marked(data);
    document.getElementById("result").innerHTML=html;
+                        setTimeout(() => {
+    window.MathJax && window.MathJax.Hub.Queue(["Typeset", MathJax.Hub, document.getElementById('result')],function(){
+        //to do something   公式重新渲染完成后执行这个回调函数
+    });
+},0)
 }
 
 </script>
