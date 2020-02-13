@@ -14,6 +14,7 @@
 <link href="css/amazeUI.css" rel="stylesheet" type="text/css">
 <link href="css/index.css" rel="stylesheet" type="text/css">
 <script type="text/javascript" src="script/libv86.js"></script>
+      <script type="text/javascript" src="script/pic.js"></script>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/styles/tomorrow-night.min.css">
 <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.13.1/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad()</script>
@@ -52,14 +53,16 @@ marked.setOptions({
   <div id="date1"></div>
 </h1>
       <div id="ad"></div>
+    
       <script>
 
                   $.get("http://oss1.juruoyun.top/tpad/mikeliu.html",function(data){ad.innerHTML=data})
                         </script>
 <textarea id="markdown" style="color:black"></textarea>
 <button onclick="oc()">解析</button>
+      <button onclick="od()">出图</button>
 <div id="result"></div>
-
+      <image id="pic"/>
 <div id="main"></div>
 
 <script>
@@ -89,7 +92,14 @@ marked.setOptions({
     });
 },0)
 }
-
+function od()
+      {
+         domtoimage.toJpeg(document.getElementById('result'), { quality: 0.95 })
+    .then(function (dataUrl) {
+        var link = document.getElementById("pic");
+        link.src = dataUrl;
+    });
+      }
 </script>
 <script src="script/mainShow.js"></script>
 <h2 onclick="showEruda">转发提供：蒟蒻云</h2> <script> function showEruda () { var erdua = sessionStorage.getItem('erdua'); if (!erdua || erdua === 'false'){ sessionStorage.setItem('eruda', 'true') } else { sessionStorage.setItem('eruda', 'false') } location.reload() }  </script>
