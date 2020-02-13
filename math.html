@@ -61,7 +61,7 @@ marked.setOptions({
 <textarea id="markdown" style="color:black"></textarea>
 <button onclick="oc()">解析</button>
       <button onclick="od()">出图</button>
-<div id="result"></div>
+<div id="result" style="color:black;background-color:white"></div>
       <image id="pic"/>
 <div id="main"></div>
 
@@ -94,7 +94,7 @@ marked.setOptions({
 }
 function od()
       {
-         domtoimage.toJpeg(document.getElementById('result'), { quality: 0.95 })
+         domtoimage.toSvg(document.getElementById('result'))
     .then(function (dataUrl) {
         var link = document.getElementById("pic");
         link.src = dataUrl;
